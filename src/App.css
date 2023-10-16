@@ -1,0 +1,306 @@
+.App {
+  text-align: center;
+  background-image: url(./bgimamge.jpeg);
+
+}
+
+
+.dashboard {
+  background-image: url(./bgimamge.jpeg);
+  text-align: center;
+  padding: 20px;
+  height: 77.3vh;
+
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipments, .stock {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+table {
+  width: 100%;
+  max-height: 20px;
+  border-collapse: collapse;
+  overflow-y: auto;
+}
+thead{
+  background-color: #f51313;
+  color: #000;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
+}
+.stock thead{
+  background-color: #f50404;
+  color: #000;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
+}
+table, th, td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Updated styling for the Dashboard layout */
+.dashboard {
+  text-align: center;
+  padding: 5%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dashboard-content {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-height: 220px;
+}
+
+/* Styling for the Shipments component (60% width) */
+.shipments-container {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: -40px;
+}
+
+.shipments {
+  padding: 10px;
+  opacity: 0.92;
+  border: 1px solid #ccc;
+  margin: 1px;
+  background-color: #f0f0f0; /* Light gray background color */
+  border-radius: 25px;
+}
+
+.shipments h2 {
+  color: #ed1010; /* Dark text color */
+}
+
+.shipment-form input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #999;
+  border-radius: 25px;
+}
+
+.shipment-form button {
+  background-color: #b90303; /* Blue button background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.shipment-form 
+.shipment-form button:hover {
+  background-color: #f0f2f4; /* Darker blue on hover */
+  color:black;
+  /* //add shadow to button */
+  box-shadow: 2px 8px 16px 3px rgba(15, 15, 15, 0.2);
+  /* //add border to button */
+  /* //add slight pop up transition effect */
+  transition: all 0.3s ease 0s;
+  transform: scale(1.1);
+}
+
+.shipments ul {
+  list-style: none;
+  /* //change opacity of the list */
+  opacity: 1;
+  padding: 0;
+  margin-left: -10px;
+  border-radius: 25px;
+  max-height: 250px;
+  overflow-y: calc(100% - 20px);
+}
+.shipment-scroll{
+  margin-top: 8px;
+  max-height: 280px;
+  overflow-y: scroll;
+}
+.shipment-table button{
+  background-color: #0a0a0a; /* Blue button background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 4px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.shipment-table button:hover{
+  background-color: #d10303; /* Blue button background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 4px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s; 
+  box-shadow: 2px 8px 16px 3px rgba(15, 15, 15, 0.2);
+  /* //add pop-up to the button on hover by some distance; */
+  transform: scale(1.1);
+}
+
+.shipments li {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff; /* White background color */
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+/* Styling for the Stock component (40% width) */
+.dashboard-content2{
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.stock-container {
+  width: 100%;
+  opacity: 0.7;
+  padding: 8px;
+  border: 2px solid #f5f2f2;
+  margin: 10px;
+  color: white;
+  background-color: #0a0900; /* Light gray background color */
+  border-radius: 25px;
+  margin-right: 100px;
+  margin-left: 70px;
+}
+.stock{
+  max-width: 80%;
+  margin-right: 100px;
+  max-height: 200px;
+  overflow-y:scroll;
+}
+.dashboard h1{
+  margin-top: -20px;
+  margin-left: 27%;
+  text-align: center;
+  color: rgb(249, 250, 250); /* Dark text color */
+  text-shadow:  10px 10px 100px #f0f0f0;
+}
+.dashboard h1:hover{
+  color:rgb(246, 240, 240);
+}
+/* Define fonts and font size */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+.stock-container button{
+  background-color: #b90303; /* Blue button background color */
+  color: #f3f0f0; /* White text color */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 25px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+
+
+.stock-container button:hover{
+  
+  background-color: #047cf4; /* Darker blue on hover */
+  color:rgb(255, 255, 255);
+  /* //add shadow to button */
+  box-shadow: 2px 8px 16px 3px rgba(255, 255, 255, 0.2);
+  /* //add border to button */
+  /* //add slight pop up transition effect */
+  transition: all 0.3s ease 0s;
+  transform: scale(1.2);
+}
+
+/* Styles for the modal */
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(11, 11, 11, 0.7); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReactModal__Content{
+  position: relative;
+  background: #f5f3f3;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 10px 20px 50px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the modal content */
+.ReactModal__Content h2 {
+  margin-top: 0;
+}
+
+/* Style for input fields */
+.ReactModal__Content input {
+  width: 97%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+}
+
+/* Style for buttons */
+.ReactModal__Content button {
+  padding: 10px 20px;
+  background: #e40707;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Close button style */
+.ReactModal__Content .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #faf7f7;
+  cursor: pointer;
+}
+
+/* Close button hover effect */
+.ReactModal__Content button:hover {
+  background-color: #0f0e0e;
+}
+
+/* Center align button inside modal */
+.ReactModal__Content button.center {
+  display: block;
+  margin: 0 auto;
+}
